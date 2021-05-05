@@ -13,7 +13,10 @@ public class OperacionesService {
         return a-b;
     }
 
-    public double division(double a,double b){
+    public double division(double a,double b) throws Exception{
+        if(b==0){
+            throw new Exception();
+        }
         return a/b;
     }
     public double multiplicacion(double a,double b){
